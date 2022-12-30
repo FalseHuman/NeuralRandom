@@ -1,0 +1,18 @@
+<MyRoot>:
+
+    random_label: random_label
+
+    BoxLayout:
+        orientation: "vertical"
+        Label:
+            text: "Случайное число"
+            font_size: 64
+            color: 0.92, 0.45, 0
+        Label:
+            id: random_label
+            text: "-"
+            font_size: 64
+        Button:
+            text: "Сгенерировать"
+            font_size: 32
+            on_press: root.generate_number()
